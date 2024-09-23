@@ -1,0 +1,25 @@
+root@Lenovo:/modulo1/linux# ls
+calculadora.sh
+root@Lenovo:/modulo1/linux# ls -l
+total 4
+-rw-r--r-- 1 root root 692 Sep 19 16:26 calculadora.sh
+root@Lenovo:/modulo1/linux# chmod 755 calculadora.sh
+root@Lenovo:/modulo1/linux# ls -l
+total 4
+-rwxr-xr-x 1 root root 692 Sep 19 16:26 calculadora.sh
+root@Lenovo:/modulo1/linux# python3 calculadora.sh
+Digite o primeiro número: 5
+Digite outro número: 6
+Qual operação você deseja fazer:
+Adição = 1
+Subtração = 2
+Divisão = 3
+Multiplicação = 4
+1
+11.0
+Digite o primeiro número:
+Traceback (most recent call last):
+  File "/modulo1/linux/calculadora.sh", line 5, in <module>
+    num1 = float(input('Digite o primeiro número: '))
+ValueError: could not convert string to float: ''
+root@Lenovo:/modulo1/linux#
